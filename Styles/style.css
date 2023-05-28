@@ -1,0 +1,123 @@
+html {
+    background-color: black;
+    height: 100%;
+    color: white;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.titulo {
+    color: lightblue;
+    width: 278px;
+    height: 50px;
+    background-color: teal;
+}
+label {
+    background-color: tomato;
+    width: 268px;
+    height: 50px;
+    display: block;
+}
+input {
+    background-color: palegoldenrod;
+    width: 268px;
+    height: 50px;
+}
+button {
+    background-color: blueviolet;
+    width: 268px;
+    height: 50px;
+}
+body{
+    display: flex;
+    height: 100%;
+}
+.container {
+    margin: auto;
+}
+.title {
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
+.title h1 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-size: 6em;
+    -webkit-text-stroke: 1px white;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+.title__underline {
+    position:absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0.3em;
+    height: 3px;
+    background-color: #17bdef;
+    z-index:5;
+    transition: transform 580ms
+    cubic-bezier(0.2, 0.1, 0.15, 1.32);
+}
+.title__highlight {
+    position: absolute;
+    width: 100%;
+    bottom: -50;
+    left: 0;
+    height: 50px;
+    background-color: #43ffbe;
+    z-index: -1;
+    transition: transform 400ms ease;
+
+}
+.title__filled {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 6em;
+    top: 0;
+    -webkit-clip-path:polygon(0% 100%,
+    0% 99%, 100% 99%, 100% 100%);
+    clip-path: polygon(0% 100%,
+    0% 99%, 100% 99%, 100% 100%);
+    transition: -webkit-clip-path 600ms
+    cubic-bezier(0.2, 0.1, 0.15, 1.32);
+    transition: clip-path 600ms
+    cubic-bezier(0.2, 0.1, 0.15, 1.32);
+    transition: clip-path 600ms
+    cubic-bezier(0.2, 0.1, 0.15, 1.32),
+    -webkit-clip-path 600ms cubic-bezier(0.2,
+    0.1, 0.15, 1.32);
+
+     
+}
+.title:hover .title__filled {
+    -webkit-clip-path:polygon(0% 100%,
+    0% 99%, 100% 99%, 100% 100%);
+        clip-path: polygon(0% 100%,
+        0% 99%, 100% 99%, 100% 100%);
+}
+.title:hover .title__underline {
+    transform: translateY(-9em);
+}
+.title:hover .title__highlight {
+    transform: translateY(-2.2em);
+}
+#greninja {
+    display: none;
+}
+span {
+    display: inline-block;
+    position: relative;
+    height: 2em;
+    width: 2em;
+    left: 13em;
+    top: -2em;
+    background: black;
+}

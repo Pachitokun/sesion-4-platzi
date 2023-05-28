@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOSKEPON</title>
+    <script src="./js/moskepon.js"></script>
+    <link rel="stylesheet" href="./Styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+    <body>
+    
+        <div class="container">
+                <section id="seleccionamascota" class="center">
+                <div class="title">
+                    <h1>MOSKEPON 🔥 💧 🌱
+                        <div class="title__highlight"></div>
+                    </h1>
+                    <div class="title__underline"></div>
+                    <div aria-hidden
+                    class="title__filled">elige tu mascota:</div>
+                </div>
+                    
+                    
+
+
+                    <label>
+                        <h2>greninja</h2>
+                        <input type="checkbox" name="mascota" id="greninja"/>
+                        <span></span>
+                    
+                    </label>
+
+                    <label>charizad</label>
+                    <input type="radio" name="mascota" id="charizad"/>
+
+                    <label>vulvasur</label>
+                    <input type="radio" name="mascota" id="vulvasur"/>
+
+
+                    <button id="botonmascota">seleccionar</button>
+                </section>
+
+                <section id="seleccionaataque">
+                    <h1 class="titulo">poskemon 🔥 💧 🌱</h1>
+                    <h2>elige tu ataque</h2>
+
+
+                    <p>tu mascota <span id="mascotajugador"></span>tiene <span id="vidasjugador">3 vidas</span></p>
+                    <p>la mascota <span id="mascotaenemigo"></span>del enemigo <span id="vidasenemigo">3 vidas</span></p>
+                    <p>
+                        <button id="botonfuego">fuego 🔥</button>
+                        <button id="botonagua">agua 💧</button>
+                        <button id="botontierra">tierra 🌱</button>
+                    </p>
+                </section>
+
+                <section id="mensajes">
+                    <p>tu mascota ataco con fuego,la mascota del enemigo ataco con tierra - ganaste🏆</p>
+                </section>
+
+                <section id="reiniciar">
+                    <button id="reiniciar">reiniciar</button>
+                </section>
+        </div>
+    </body>
+</html>
